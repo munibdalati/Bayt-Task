@@ -4,12 +4,16 @@
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
 }
-/* -------------------------*** Header ***------------------------- */
-header {
+/* begining of navbar */
+nav {
   display: flex;
   background-color: #000000;
   font-size: 14px;
   font-weight: 500;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
 }
 
 li {
@@ -39,14 +43,14 @@ a {
   padding: 0 2% 0 0;
 }
 
-.nav-menu {
+.nav__menu {
   display: flex;
   align-items: center;
   gap: 16px;
   width: 100%;
 }
 
-.nav-link {
+.nav__link {
   transition: 0.3s ease;
 }
 
@@ -70,7 +74,7 @@ a {
   font-family: inherit;
 }
 
-.dropdown-content {
+.dropdown__content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -79,7 +83,7 @@ a {
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown__content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -88,11 +92,11 @@ a {
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown__content a:hover {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown__content {
   display: block;
 }
 
@@ -107,7 +111,7 @@ a {
   .hamburger {
     display: block;
   }
-  .nav-menu {
+  .nav__menu {
     position: fixed;
     left: 100%;
     top: 40px;
@@ -119,29 +123,29 @@ a {
     transition: 0.3s;
     z-index: 1;
   }
-  .nav-item {
+  .nav__item {
     margin: 16px 0;
   }
-  .nav-menu.active {
+  .nav__menu.active {
     left: 0;
   }
-  .search-icon {
+  .search__icon {
     display: none;
   }
 }
 
-/* ending of heading */
+/* ending of navbar */
 
 /* begining of image container */
 .desert__img {
   width: 100%;
 }
 
-.img-container {
+.img__container {
   position: relative;
 }
 
-.img-container .btn {
+.img__container .btn {
   position: absolute;
   top: 80%;
   left: 15%;
@@ -155,12 +159,12 @@ a {
   text-align: center;
 }
 
-.img-container .btn:hover {
+.img__ontainer .btn:hover {
   background-color: black;
 }
 
 @media (max-width: 768px) {
-  .img-container .btn {
+  .img__container .btn {
     top: 70%;
     left: 15%;
     font-size: 22px;
@@ -169,7 +173,7 @@ a {
 }
 
 @media (max-width: 425px) {
-  .img-container .btn {
+  .img__container .btn {
     top: 70%;
     left: 20%;
     font-size: 15px;
