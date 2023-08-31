@@ -12,7 +12,7 @@ nav {
   font-weight: 500;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
 
 }
 
@@ -54,13 +54,13 @@ a {
   transition: 0.3s ease;
 }
 
-.nav-link:hover {
+.nav__link:hover {
   color: #babbbd;
 }
 
 /* begining of dropdown */
 .dropdown {
-  overflow: hidden;
+  display: relative;
 }
 
 .dropdown .dropbtn {
